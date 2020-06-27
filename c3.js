@@ -13,7 +13,7 @@ function romawi(n) {
     }
     return hasil
 }
-
+console.log("test")
 console.log("script testing untuk konversi romawi");
 console.log(" input | expected | result  |");
 console.log("  4    |          |  ", romawi(4));

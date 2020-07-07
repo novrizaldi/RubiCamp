@@ -7,13 +7,12 @@ const {
   on
 } = require('process');
 
-if (process.argv.length !== 3) {
+if (process.argv.length <= 2) {
   console.log('tolong sertakan nama file sebagai inputan nya, misalnya "node solution.js data.json"');
   process.exit(0);
 }
 
 const data = JSON.parse(fs.readFileSync('data.json', 'utf8'));
-
 
 const rl = readline.createInterface({
   input: process.stdin,
